@@ -259,6 +259,15 @@ nav ul li a:hover {
     margin-right: 5%;
 }
 
+.project-suggest {
+    font-size: 24pt;
+    padding-bottom: 1%;
+    margin-bottom: 2%;
+    text-align: center;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
 .list-controller {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -280,12 +289,12 @@ nav ul li a:hover {
 
 #contact {
     min-height: auto;
-    max-height: 500px;
+    overflow: hidden;
 }
 
 #contact-2 {
-    padding-top: 5%;
-    padding-bottom: 5%;
+    margin-top: 5%;
+    margin-bottom: 5%;
     margin-left: 5%;
 }
 
@@ -328,8 +337,50 @@ nav ul li a:hover {
 }
 
 .links {
-    margin-top: 6%;
+    margin-top: 2%;
 }
+
+/*details page */
+
+.project-main {
+    padding-top: 13%;
+    margin: 5%;
+}
+
+.project-image-gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 2%;
+    overflow: hidden;
+    padding-bottom: 10%;
+}
+
+.project-title {
+    font-size: 24pt;
+    padding-bottom: 2%;
+}
+
+.project-desc {
+    margin-bottom: 2%;
+}
+
+.gallery-image {
+    width: 100%;
+    margin: 1%;
+}
+
+.pdf-link {
+    text-align: center;
+    font-weight: 600;
+    margin-top: 2%;
+}
+
+.pdf-link a {
+    color: var(--highlight-colour);
+}
+
+
+
 
 @media (min-width: 600px) {
     
@@ -417,6 +468,55 @@ nav ul li a:hover {
 
     .feature-image {
         width: 80%;
+    }
+
+    .portrait {
+        width: 25%;
+        margin-bottom: -4%;
+    }
+
+    .designer-desc {
+        width: 50%;
+    }
+
+    .list-controller {
+        margin-left: 25%;
+        margin-right: 25%;
+        text-align: center;
+    }
+
+    #contact-2 {
+        padding-left: 25%;
+    }
+
+    .project-image-gallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        padding-bottom: 2%;
+    }
+
+    .project-desc {
+        width: 75%;
+    }
+
+    .project-main {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        padding-top: 3%;
+    }
+
+    .pdf-link {
+        text-align: start;
+        margin-top: -70%;
+    }
+
+    .project-suggest {
+        font-size: 24pt;
+        padding-top: 5%;
+        margin-bottom: -8%;
+        text-align: center;
+        margin-left: 5%;
+        margin-right: 5%;
     }
     
 }
